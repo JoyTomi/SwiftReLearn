@@ -14,6 +14,12 @@
 		591D50A9265B71F6004DDFE2 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D50A8265B71F6004DDFE2 /* String+Extension.swift */; };
 		591D50AB265B7B1F004DDFE2 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D50AA265B7B1F004DDFE2 /* Array+Extension.swift */; };
 		591D50AD265B7C5E004DDFE2 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D50AC265B7C5E004DDFE2 /* UIImage+Extension.swift */; };
+		591D50AF265B9F49004DDFE2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D50AE265B9F49004DDFE2 /* UIView+Extension.swift */; };
+		591D50B1265CC8FD004DDFE2 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D50B0265CC8FD004DDFE2 /* Date+Extension.swift */; };
+		591D50B3265CCBC7004DDFE2 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D50B2265CCBC7004DDFE2 /* Dictionary+Extension.swift */; };
+		591D50B6265CCD70004DDFE2 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D50B5265CCD70004DDFE2 /* AppUtils.swift */; };
+		591D50B8265CCEAE004DDFE2 /* ValidateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D50B7265CCEAE004DDFE2 /* ValidateUtils.swift */; };
+		591D50BA265CCF1C004DDFE2 /* IOUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D50B9265CCF1C004DDFE2 /* IOUtils.swift */; };
 		59375CBF26563103005A4F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59375CBE26563103005A4F18 /* AppDelegate.swift */; };
 		59375CC126563103005A4F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59375CC026563103005A4F18 /* SceneDelegate.swift */; };
 		59375CC326563103005A4F18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59375CC226563103005A4F18 /* ViewController.swift */; };
@@ -50,6 +56,12 @@
 		591D50A8265B71F6004DDFE2 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		591D50AA265B7B1F004DDFE2 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		591D50AC265B7C5E004DDFE2 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		591D50AE265B9F49004DDFE2 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		591D50B0265CC8FD004DDFE2 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		591D50B2265CCBC7004DDFE2 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		591D50B5265CCD70004DDFE2 /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		591D50B7265CCEAE004DDFE2 /* ValidateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateUtils.swift; sourceTree = "<group>"; };
+		591D50B9265CCF1C004DDFE2 /* IOUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOUtils.swift; sourceTree = "<group>"; };
 		59375CBB26563103005A4F18 /* SwiftReLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftReLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59375CBE26563103005A4F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59375CC026563103005A4F18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +107,7 @@
 		591D509E265B3FA6004DDFE2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				591D50B4265CCD57004DDFE2 /* Utils */,
 				591D509F265B409C004DDFE2 /* Macros */,
 				598EE3FB265792CF008B5F12 /* Extensions */,
 			);
@@ -108,6 +121,16 @@
 				591D50A2265B418F004DDFE2 /* UIMacros.swift */,
 			);
 			name = Macros;
+			sourceTree = "<group>";
+		};
+		591D50B4265CCD57004DDFE2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				591D50B5265CCD70004DDFE2 /* AppUtils.swift */,
+				591D50B7265CCEAE004DDFE2 /* ValidateUtils.swift */,
+				591D50B9265CCF1C004DDFE2 /* IOUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		59375CB226563103005A4F18 = {
@@ -172,6 +195,9 @@
 				591D50A8265B71F6004DDFE2 /* String+Extension.swift */,
 				591D50AA265B7B1F004DDFE2 /* Array+Extension.swift */,
 				591D50AC265B7C5E004DDFE2 /* UIImage+Extension.swift */,
+				591D50AE265B9F49004DDFE2 /* UIView+Extension.swift */,
+				591D50B0265CC8FD004DDFE2 /* Date+Extension.swift */,
+				591D50B2265CCBC7004DDFE2 /* Dictionary+Extension.swift */,
 			);
 			name = Extensions;
 			path = ..;
@@ -308,12 +334,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				591D50B6265CCD70004DDFE2 /* AppUtils.swift in Sources */,
 				591D50AB265B7B1F004DDFE2 /* Array+Extension.swift in Sources */,
+				591D50B3265CCBC7004DDFE2 /* Dictionary+Extension.swift in Sources */,
+				591D50B1265CC8FD004DDFE2 /* Date+Extension.swift in Sources */,
 				591D50A3265B418F004DDFE2 /* UIMacros.swift in Sources */,
 				591D50A9265B71F6004DDFE2 /* String+Extension.swift in Sources */,
 				59375CC326563103005A4F18 /* ViewController.swift in Sources */,
+				591D50BA265CCF1C004DDFE2 /* IOUtils.swift in Sources */,
 				591D50A7265B47A4004DDFE2 /* DateFormatter+Extension.swift in Sources */,
 				591D50A5265B44F8004DDFE2 /* UIColor+Extension.swift in Sources */,
+				591D50B8265CCEAE004DDFE2 /* ValidateUtils.swift in Sources */,
+				591D50AF265B9F49004DDFE2 /* UIView+Extension.swift in Sources */,
 				59375CBF26563103005A4F18 /* AppDelegate.swift in Sources */,
 				598EE3FD265792FB008B5F12 /* RootViewController.swift in Sources */,
 				59375CC126563103005A4F18 /* SceneDelegate.swift in Sources */,

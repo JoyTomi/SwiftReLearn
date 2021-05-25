@@ -84,9 +84,43 @@ extension String {
     func tm_pregReplace(pattern: String, with: String, options: NSRegularExpression.Options = []) -> String {
         let regex = try! NSRegularExpression(pattern: pattern, options: options)
         return regex.stringByReplacingMatches(in: self, options: [],
-                                               range: NSMakeRange(0, self.count),
-                                               withTemplate: with)
+                                              range: NSMakeRange(0, self.count),
+                                              withTemplate: with)
         
+    }
+    
+    
+    ///判断如果包含中文
+    func tm_containChinese() -> Bool {
+        for i in 0..<self.count {
+            let a = (self as NSString).character(at: i)
+            if a > 0x4e00 && a < 0x9fff {
+                return true
+            }
+        }
+        return false
+    }
+    
+    ///判断输入框是否包含空格
+    func containSpace() -> Bool {
+        let str = self.trimmingCharacters(in: .whitespacesAndNewlines)
+        return str == self
+    }
+    
+    ///判断输入框是否圈空格
+    func isSpaceAll() -> Bool {
+        let str = self.trimmingCharacters(in: .whitespacesAndNewlines)
+        return str.count == 0
+    }
+    
+    //    数字转汉字
+    static func transforNumberToString(num:NSNumber)->String{
+        let formatter = NumberFormatter()
+        let locale = Locale.init(identifier: "zh_Hans")
+        formatter.numberStyle = .spellOut
+        formatter.locale = locale
+        let string = formatter.string(from: num)
+        return string ?? ""
     }
 }
 // 处理HTML
