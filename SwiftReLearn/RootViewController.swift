@@ -10,11 +10,16 @@ import UIKit
 
 class RootViewController: UIViewController {
     
+    var observer:NSKeyValueObservation?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.tm_hex(hexString: "#00C28A")
         let a = "".tm_getFormatterDurationToMS(9)
         TMLog(a)
+        
+        self.addObserver(self, forKeyPath: "age", options: [.old,.new], context: nil)
         
         var b = "<p>123</p>"
         TMLog(b.tm_filterHTML())
@@ -27,6 +32,7 @@ class RootViewController: UIViewController {
         img.layer.shadowOpacity = 0.5
         img.layer.shadowRadius = 10
         img.layer.cornerRadius = 12
+        
         
         view.addSubview(img)
         UIView.cuttingImageView(imageView: img, direction: .bottomLeft, cornerRadii: 40.0, borderWidth: 1, borderColor: .red, backgroundColor: .clear)
@@ -49,6 +55,7 @@ class RootViewController: UIViewController {
         
         TMLog(AppUtils.infoDictionary)
     }
+    
 }
 
 struct TestStruct {

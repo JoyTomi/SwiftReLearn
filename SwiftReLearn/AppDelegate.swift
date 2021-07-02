@@ -7,15 +7,29 @@
 //
 
 import UIKit
-
+import JJException
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+//上架审核相关
+//https://www.jianshu.com/p/6bedca6ab1ec
+class AppDelegate: UIResponder, UIApplicationDelegate,JJExceptionHandle {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.registerJJException()
+        RunTimeViewController.swizzle()
         return true
+    }
+    
+    func registerJJException(){
+        JJException.configExceptionCategory(.allExceptZombie)
+        JJException.startGuard()
+        JJException.register(self);
+    }
+        
+    @objc func handleCrashException(_ exceptionMessage: String, extraInfo info: [AnyHashable : Any]?) {
+        TMLog(#function)
+        TMLog(exceptionMessage)
+        TMLog(info?.debugDescription)
     }
 
     // MARK: UISceneSession Lifecycle
@@ -27,9 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+        
     }
 
 

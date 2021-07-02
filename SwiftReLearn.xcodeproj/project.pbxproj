@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183730DB268B175E008BC24E /* RunTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183730DA268B175E008BC24E /* RunTimeViewController.swift */; };
+		183EEB862689A31C00A85F58 /* KVOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183EEB852689A31C00A85F58 /* KVOViewController.swift */; };
+		183EEB882689ABD800A85F58 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183EEB872689ABD800A85F58 /* DelegateViewController.swift */; };
+		18DAB8B6268C47C5000A9729 /* swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DAB8B5268C47C5000A9729 /* swizzle.swift */; };
+		18DAB8B8268C619F000A9729 /* MultiThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DAB8B7268C619F000A9729 /* MultiThreadViewController.swift */; };
+		18DAB8BA268D970D000A9729 /* BlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DAB8B9268D970D000A9729 /* BlockViewController.swift */; };
 		591D50A1265B40D9004DDFE2 /* ACMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D50A0265B40D9004DDFE2 /* ACMacros.swift */; };
 		591D50A3265B418F004DDFE2 /* UIMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D50A2265B418F004DDFE2 /* UIMacros.swift */; };
 		591D50A5265B44F8004DDFE2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D50A4265B44F8004DDFE2 /* UIColor+Extension.swift */; };
@@ -50,6 +56,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183730DA268B175E008BC24E /* RunTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunTimeViewController.swift; sourceTree = "<group>"; };
+		183EEB852689A31C00A85F58 /* KVOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVOViewController.swift; sourceTree = "<group>"; };
+		183EEB872689ABD800A85F58 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
+		18DAB8B5268C47C5000A9729 /* swizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swizzle.swift; sourceTree = "<group>"; };
+		18DAB8B7268C619F000A9729 /* MultiThreadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiThreadViewController.swift; sourceTree = "<group>"; };
+		18DAB8B9268D970D000A9729 /* BlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockViewController.swift; sourceTree = "<group>"; };
 		1BB74A1A4F34EAA04501AF4B /* Pods_SwiftReLearn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftReLearn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		591D50A0265B40D9004DDFE2 /* ACMacros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACMacros.swift; sourceTree = "<group>"; };
 		591D50A2265B418F004DDFE2 /* UIMacros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMacros.swift; sourceTree = "<group>"; };
@@ -176,6 +188,12 @@
 				59375CC026563103005A4F18 /* SceneDelegate.swift */,
 				59375CC226563103005A4F18 /* ViewController.swift */,
 				598EE3FC265792FB008B5F12 /* RootViewController.swift */,
+				183EEB852689A31C00A85F58 /* KVOViewController.swift */,
+				183EEB872689ABD800A85F58 /* DelegateViewController.swift */,
+				183730DA268B175E008BC24E /* RunTimeViewController.swift */,
+				18DAB8B7268C619F000A9729 /* MultiThreadViewController.swift */,
+				18DAB8B9268D970D000A9729 /* BlockViewController.swift */,
+				18DAB8B5268C47C5000A9729 /* swizzle.swift */,
 				59375CC426563103005A4F18 /* Main.storyboard */,
 				59375CC726563104005A4F18 /* Assets.xcassets */,
 				59375CC926563104005A4F18 /* LaunchScreen.storyboard */,
@@ -224,7 +242,6 @@
 				C8FBBCBFD69CEAC8F6E249DD /* Pods-SwiftReLearn.debug.xcconfig */,
 				E20BB61B83374B4EF975FF52 /* Pods-SwiftReLearn.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -403,17 +420,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DAB8B8268C619F000A9729 /* MultiThreadViewController.swift in Sources */,
+				18DAB8BA268D970D000A9729 /* BlockViewController.swift in Sources */,
 				591D50B6265CCD70004DDFE2 /* AppUtils.swift in Sources */,
+				18DAB8B6268C47C5000A9729 /* swizzle.swift in Sources */,
+				183EEB882689ABD800A85F58 /* DelegateViewController.swift in Sources */,
 				591D50AB265B7B1F004DDFE2 /* Array+Extension.swift in Sources */,
 				591D50B3265CCBC7004DDFE2 /* Dictionary+Extension.swift in Sources */,
 				591D50B1265CC8FD004DDFE2 /* Date+Extension.swift in Sources */,
 				591D50A3265B418F004DDFE2 /* UIMacros.swift in Sources */,
+				183EEB862689A31C00A85F58 /* KVOViewController.swift in Sources */,
 				591D50A9265B71F6004DDFE2 /* String+Extension.swift in Sources */,
 				59375CC326563103005A4F18 /* ViewController.swift in Sources */,
 				591D50BA265CCF1C004DDFE2 /* IOUtils.swift in Sources */,
 				591D50A7265B47A4004DDFE2 /* DateFormatter+Extension.swift in Sources */,
 				591D50A5265B44F8004DDFE2 /* UIColor+Extension.swift in Sources */,
 				591D50B8265CCEAE004DDFE2 /* ValidateUtils.swift in Sources */,
+				183730DB268B175E008BC24E /* RunTimeViewController.swift in Sources */,
 				591D50AF265B9F49004DDFE2 /* UIView+Extension.swift in Sources */,
 				59375CBF26563103005A4F18 /* AppDelegate.swift in Sources */,
 				598EE3FD265792FB008B5F12 /* RootViewController.swift in Sources */,
