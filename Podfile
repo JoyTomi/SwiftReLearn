@@ -11,4 +11,8 @@ target 'SwiftReLearn' do
   pod 'ESTabBarController-swift', '~> 2.8.0'
   pod 'Reusable', '~> 4.1.1'
   pod 'JJException'
+  pod 'WCDB.swift'
+  pod 'KVOController'
+  pod 'FMDB'
+  pod 'OAStackView'
 end

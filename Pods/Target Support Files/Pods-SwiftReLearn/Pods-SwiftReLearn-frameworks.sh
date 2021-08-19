@@ -177,20 +177,30 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JJException/JJException.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KVOController/KVOController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SQLiteRepairKit/sqliterk.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WCDB.swift/WCDBSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher/sqlcipher.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JJException/JJException.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KVOController/KVOController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SQLiteRepairKit/sqliterk.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WCDB.swift/WCDBSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WCDBOptimizedSQLCipher/sqlcipher.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

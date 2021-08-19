@@ -29,10 +29,11 @@ extension MultiThreadViewController {
         //
         //        let obj = ObjectForThread()
         //        obj.threadTest()
-//        useWorkitem()
+        //        useWorkitem()
         self.groupQueue()
     }
 }
+
 
 
 class ObjectForThread {
@@ -79,6 +80,7 @@ extension MultiThreadViewController {
             
         }
     }
+    
     //并发队列(Concurrent Queues)
     private func concurrent(){
         
@@ -165,5 +167,4 @@ extension MultiThreadViewController {
             item.perform()
         }
     }
-    
 }

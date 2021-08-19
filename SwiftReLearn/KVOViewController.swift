@@ -21,7 +21,7 @@ class KVOViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .gray
-        //2、添加坚听者
+        //2、添加监听者
         self.addObserver(self, forKeyPath: "age", options: [.old,.new], context: nil)
         
         //方法2
@@ -46,4 +46,17 @@ class KVOViewController: UIViewController {
 
 class KVOModel: NSObject {
     @objc dynamic var name: String = ""
+}
+
+
+import KVOController
+extension KVOViewController {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        kvoController.observe(model, keyPath: "name", options: .new) { viewcontroller, model, change in
+            TMLog(viewcontroller)
+            TMLog(model)
+            TMLog(change)
+        }
+    }
 }

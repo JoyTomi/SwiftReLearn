@@ -27,12 +27,13 @@ public struct Swizzle {
 
     @resultBuilder
     public struct SwizzleFunctionBuilder {
-        
         public static func buildBlock(_ swizzlePairs: SwizzlePair...) -> [SwizzlePair] {
             Array(swizzlePairs)
         }
         
     }
+    
+    
     
     @discardableResult
     public init(_ type: AnyObject.Type, @SwizzleFunctionBuilder _ makeSwizzlePairs: () -> [SwizzlePair]) {

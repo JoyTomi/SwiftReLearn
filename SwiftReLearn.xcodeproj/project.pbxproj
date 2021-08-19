@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181B0D0626C0F6DB001FFE2D /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B0D0526C0F6DB001FFE2D /* GCDViewController.swift */; };
+		1821141126A51DEE00A9E6E1 /* FMDBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821141026A51DEE00A9E6E1 /* FMDBViewController.swift */; };
 		183730DB268B175E008BC24E /* RunTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183730DA268B175E008BC24E /* RunTimeViewController.swift */; };
 		183EEB862689A31C00A85F58 /* KVOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183EEB852689A31C00A85F58 /* KVOViewController.swift */; };
 		183EEB882689ABD800A85F58 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183EEB872689ABD800A85F58 /* DelegateViewController.swift */; };
+		18A08A8926CA346F008E0B5A /* RunLoopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A08A8826CA346F008E0B5A /* RunLoopViewController.swift */; };
+		18C2FC5526A1715600DA1CB3 /* WCDBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C2FC5426A1715600DA1CB3 /* WCDBViewController.swift */; };
 		18DAB8B6268C47C5000A9729 /* swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DAB8B5268C47C5000A9729 /* swizzle.swift */; };
 		18DAB8B8268C619F000A9729 /* MultiThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DAB8B7268C619F000A9729 /* MultiThreadViewController.swift */; };
 		18DAB8BA268D970D000A9729 /* BlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DAB8B9268D970D000A9729 /* BlockViewController.swift */; };
+		18DCD60726C21C6A0017D7A6 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCD60626C21C6A0017D7A6 /* StackViewController.swift */; };
 		591D50A1265B40D9004DDFE2 /* ACMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D50A0265B40D9004DDFE2 /* ACMacros.swift */; };
 		591D50A3265B418F004DDFE2 /* UIMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D50A2265B418F004DDFE2 /* UIMacros.swift */; };
 		591D50A5265B44F8004DDFE2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591D50A4265B44F8004DDFE2 /* UIColor+Extension.swift */; };
@@ -56,12 +61,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181B0D0526C0F6DB001FFE2D /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
+		1821141026A51DEE00A9E6E1 /* FMDBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMDBViewController.swift; sourceTree = "<group>"; };
 		183730DA268B175E008BC24E /* RunTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunTimeViewController.swift; sourceTree = "<group>"; };
 		183EEB852689A31C00A85F58 /* KVOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVOViewController.swift; sourceTree = "<group>"; };
 		183EEB872689ABD800A85F58 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
+		188B2EEC26A7E5D4008164A1 /* SwiftReLearn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftReLearn-Bridging-Header.h"; sourceTree = "<group>"; };
+		18A08A8826CA346F008E0B5A /* RunLoopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLoopViewController.swift; sourceTree = "<group>"; };
+		18C2FC5426A1715600DA1CB3 /* WCDBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCDBViewController.swift; sourceTree = "<group>"; };
 		18DAB8B5268C47C5000A9729 /* swizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swizzle.swift; sourceTree = "<group>"; };
 		18DAB8B7268C619F000A9729 /* MultiThreadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiThreadViewController.swift; sourceTree = "<group>"; };
 		18DAB8B9268D970D000A9729 /* BlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockViewController.swift; sourceTree = "<group>"; };
+		18DCD60626C21C6A0017D7A6 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		1BB74A1A4F34EAA04501AF4B /* Pods_SwiftReLearn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftReLearn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		591D50A0265B40D9004DDFE2 /* ACMacros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACMacros.swift; sourceTree = "<group>"; };
 		591D50A2265B418F004DDFE2 /* UIMacros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMacros.swift; sourceTree = "<group>"; };
@@ -167,6 +178,7 @@
 				59375CBC26563103005A4F18 /* Products */,
 				BC206EA3552BF21440471578 /* Pods */,
 				40AC6597D9B351265F7BC35C /* Frameworks */,
+				188B2EEC26A7E5D4008164A1 /* SwiftReLearn-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,6 +205,11 @@
 				183730DA268B175E008BC24E /* RunTimeViewController.swift */,
 				18DAB8B7268C619F000A9729 /* MultiThreadViewController.swift */,
 				18DAB8B9268D970D000A9729 /* BlockViewController.swift */,
+				18C2FC5426A1715600DA1CB3 /* WCDBViewController.swift */,
+				18DCD60626C21C6A0017D7A6 /* StackViewController.swift */,
+				1821141026A51DEE00A9E6E1 /* FMDBViewController.swift */,
+				181B0D0526C0F6DB001FFE2D /* GCDViewController.swift */,
+				18A08A8826CA346F008E0B5A /* RunLoopViewController.swift */,
 				18DAB8B5268C47C5000A9729 /* swizzle.swift */,
 				59375CC426563103005A4F18 /* Main.storyboard */,
 				59375CC726563104005A4F18 /* Assets.xcassets */,
@@ -315,6 +332,7 @@
 				TargetAttributes = {
 					59375CBA26563103005A4F18 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1250;
 					};
 					59375CD026563104005A4F18 = {
 						CreatedOnToolsVersion = 11.6;
@@ -427,12 +445,16 @@
 				183EEB882689ABD800A85F58 /* DelegateViewController.swift in Sources */,
 				591D50AB265B7B1F004DDFE2 /* Array+Extension.swift in Sources */,
 				591D50B3265CCBC7004DDFE2 /* Dictionary+Extension.swift in Sources */,
+				181B0D0626C0F6DB001FFE2D /* GCDViewController.swift in Sources */,
 				591D50B1265CC8FD004DDFE2 /* Date+Extension.swift in Sources */,
 				591D50A3265B418F004DDFE2 /* UIMacros.swift in Sources */,
 				183EEB862689A31C00A85F58 /* KVOViewController.swift in Sources */,
+				18C2FC5526A1715600DA1CB3 /* WCDBViewController.swift in Sources */,
+				1821141126A51DEE00A9E6E1 /* FMDBViewController.swift in Sources */,
 				591D50A9265B71F6004DDFE2 /* String+Extension.swift in Sources */,
 				59375CC326563103005A4F18 /* ViewController.swift in Sources */,
 				591D50BA265CCF1C004DDFE2 /* IOUtils.swift in Sources */,
+				18A08A8926CA346F008E0B5A /* RunLoopViewController.swift in Sources */,
 				591D50A7265B47A4004DDFE2 /* DateFormatter+Extension.swift in Sources */,
 				591D50A5265B44F8004DDFE2 /* UIColor+Extension.swift in Sources */,
 				591D50B8265CCEAE004DDFE2 /* ValidateUtils.swift in Sources */,
@@ -441,6 +463,7 @@
 				59375CBF26563103005A4F18 /* AppDelegate.swift in Sources */,
 				598EE3FD265792FB008B5F12 /* RootViewController.swift in Sources */,
 				59375CC126563103005A4F18 /* SceneDelegate.swift in Sources */,
+				18DCD60726C21C6A0017D7A6 /* StackViewController.swift in Sources */,
 				591D50AD265B7C5E004DDFE2 /* UIImage+Extension.swift in Sources */,
 				591D50A1265B40D9004DDFE2 /* ACMacros.swift in Sources */,
 			);
@@ -554,6 +577,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Pods\"";
 			};
 			name = Debug;
 		};
@@ -607,6 +631,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Pods\"";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -616,6 +641,7 @@
 			baseConfigurationReference = C8FBBCBFD69CEAC8F6E249DD /* Pods-SwiftReLearn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4LRX33T3U;
 				INFOPLIST_FILE = SwiftReLearn/Info.plist;
@@ -625,6 +651,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JoyTomi.SwiftReLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftReLearn-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -635,6 +663,7 @@
 			baseConfigurationReference = E20BB61B83374B4EF975FF52 /* Pods-SwiftReLearn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4LRX33T3U;
 				INFOPLIST_FILE = SwiftReLearn/Info.plist;
@@ -644,6 +673,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JoyTomi.SwiftReLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftReLearn-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,6 +1,9 @@
 PODS:
   - DateToolsSwift (4.0.0)
   - ESTabBarController-swift (2.8.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - HandyJSON (5.0.2)
   - IQKeyboardManagerSwift (6.5.6)
   - JJException (0.2.9):
@@ -21,41 +24,61 @@ PODS:
     - JJException/Main
     - JJException/Swizzle
   - JJException/Swizzle (0.2.9)
+  - KVOController (1.2.0)
   - Reusable (4.1.1):
     - Reusable/Storyboard (= 4.1.1)
     - Reusable/View (= 4.1.1)
   - Reusable/Storyboard (4.1.1)
   - Reusable/View (4.1.1)
   - SnapKit (5.0.1)
+  - SQLiteRepairKit (1.2.2):
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDB.swift (1.0.8.2):
+    - SQLiteRepairKit (~> 1.2.0)
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDBOptimizedSQLCipher (1.2.1)
 
 DEPENDENCIES:
   - DateToolsSwift (~> 4.0.0)
   - ESTabBarController-swift (~> 2.8.0)
+  - FMDB
   - HandyJSON (~> 5.0.2)
   - IQKeyboardManagerSwift (~> 6.5.6)
   - JJException
+  - KVOController
   - Reusable (~> 4.1.1)
   - SnapKit (~> 5.0.1)
+  - WCDB.swift
 
 SPEC REPOS:
   trunk:
     - DateToolsSwift
     - ESTabBarController-swift
+    - FMDB
     - HandyJSON
     - IQKeyboardManagerSwift
     - JJException
+    - KVOController
     - Reusable
     - SnapKit
+    - SQLiteRepairKit
+    - WCDB.swift
+    - WCDBOptimizedSQLCipher
 
 SPEC CHECKSUMS:
   DateToolsSwift: 875d97ff9e3a5d54abdd67a269b3f51c757b71ab
   ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   JJException: da7c64ccf29d9938a4075378a7e9a29db7383c37
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
+  WCDB.swift: 05d509d7a0e60fb6e11c34eb7e4027c0fab5849f
+  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
 
-PODFILE CHECKSUM: 7a222b7fb0788999cfbd9c8a072d80d86e90bf0b
+PODFILE CHECKSUM: 00c435bae05357776f90cbde2be9dc6c4ac8d8b4
 
 COCOAPODS: 1.10.1
