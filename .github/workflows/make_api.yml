@@ -32,10 +32,10 @@ jobs:
         id: path
         run: echo "::set-output name=path::${{ github.workspace }}/${{ steps.date.outputs.date }}/${{ github.run_number }}/me.ipa"
 
-      - uses: yukiarrr/ios-build-action@v1.5.0
+      - uses: yukiarrr/SwiftReLearn@v1.0.0
         with:
-            project-path: ios-build-action-demo.xcodeproj
-            workspace-path: ios-build-action-demo.xcworkspace
+            project-path: SwiftReLearn.xcodeproj
+            workspace-path: SwiftReLearn.xcworkspace
             p12-base64: ${{ secrets.P12_BASE64}}
             mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64}}
             code-signing-identity: ${{ secrets.CODE_SIGNING_IDENTITY }}
