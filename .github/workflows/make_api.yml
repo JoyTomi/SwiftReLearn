@@ -40,7 +40,7 @@ jobs:
             mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64}}
             code-signing-identity: ${{ secrets.CODE_SIGNING_IDENTITY }}
             team-id: ${{ secrets.TEAM_ID }}
-            export-method: 'ad-hoc'
+            export-method: 'development'
            # output-path: output.ipa
             output-path: ${{ steps.path.outputs.path }}
             
