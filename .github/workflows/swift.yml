@@ -1,0 +1,25 @@
+name: Swift
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+   
+    strategy:
+       matrix:
+         destination: ['platform=iOS Simulator,OS=13.5,name=iPhone 11 Pro Max']
+    
+    
+    steps:
+     - uses: actions/checkout@master
+     - name: Build
+       run: xcodebuild clean && xcodebuild -allowProvisioningUpdates
+
+
+     
